@@ -1,0 +1,10 @@
+	* {
+		border: none;
+		border-radius: 0;
+		font-family: JetBrainsMono, Roboto, Helevetica, Arial, sans-serif;
+		font-size; 11px;
+		min-height: 0px
+	 
+	}
+	
+	#clock { color: #ffcc00; font-weight: bold; }
