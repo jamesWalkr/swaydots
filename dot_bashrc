@@ -1,0 +1,21 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# alias ls='ls --color=auto'
+alias l='lsd -l'
+alias la='lsd -lrt'
+alias ll='lsd -lart'
+alias grep='grep --color=auto'
+alias gst='git status'
+alias gp='git push'
+alias gl='git pull'
+alias glog='git log'
+alias gba='git branch -a'
+PS1='[\u@\h \W]\$ '
+
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+export PATH=$PATH:/opt/dea-IU-261.23567.138/bin
