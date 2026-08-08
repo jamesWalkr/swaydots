@@ -17,5 +17,6 @@ alias glog='git log'
 alias gba='git branch -a'
 PS1='[\u@\h \W]\$ '
 
-export ELECTRON_OZONE_PLATFORM_HINT=auto
-export PATH=$PATH:/opt/dea-IU-261.23567.138/bin
+export EDITOR="nvim"
+#export ELECTRON_OZONE_PLATFORM_HINT=auto
+#export PATH=$PATH:/opt/dea-IU-261.23567.138/bin
