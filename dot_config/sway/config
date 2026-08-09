@@ -21,7 +21,7 @@ set $menu rofi
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output '*' bg ~/.config/wallpaper/a_beach_with_palm_trees_and_a_moon.png fill
+output '*' bg ~/.config/wallpaper/abstract-heavy-pink-haze-darkness.jpg fill
 
 ### Border
 default_border none
@@ -78,8 +78,8 @@ default_border none
     # Start your launcher
     bindsym $mod+d exec $menu -show drun
 
-     Lock screen
-     bindsym $mod+Shift+x exec ~/Scripts/lock
+    # Lock screen
+    # bindsym $mod+Shift+x exec ~/scripts/lock 
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
