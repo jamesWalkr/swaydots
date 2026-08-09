@@ -78,8 +78,8 @@ default_border none
     # Start your launcher
     bindsym $mod+d exec $menu -show drun
 
-    # Lock screen
-    # bindsym $mod+Shift+x exec ~/scripts/lock 
+     Lock screen
+     bindsym $mod+Shift+x exec ~/Scripts/lock
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
