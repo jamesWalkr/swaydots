@@ -12,6 +12,7 @@ if status is-interactive
     alias gba='git branch -a'
     alias moi='chezmoi edit --apply $(chezmoi managed | fzf --preview "bat --color=always {}")'
     alias fz='nvim $(fzf --preview "bat --color=always {}")'
+    alias cz='chezmoi'
     set PS1 '[\u@\h \W]\$ '
     set -gx EDITOR nvim
     
