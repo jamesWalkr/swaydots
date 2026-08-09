@@ -17,6 +17,16 @@ alias glog='git log'
 alias gba='git branch -a'
 PS1='[\u@\h \W]\$ '
 
-export EDITOR="nvim"
-#export ELECTRON_OZONE_PLATFORM_HINT=auto
+# export ELECTRON_OZONE_PLATFORM_HINT=auto
 #export PATH=$PATH:/opt/dea-IU-261.23567.138/bin
+export EDITOR="nvim"
+
+# Created by `pipx` on 2026-08-08 20:10:54
+export PATH="$PATH:/home/james/.local/bin"
+
+# fish as interactive shell
+if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} && ${SHLVL} == 1 ]]
+then
+	shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=''
+	exec fish $LOGIN_OPTION
+fi
