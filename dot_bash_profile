@@ -1,0 +1,17 @@
+#
+# ~/.bash_profile
+#
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# Created by `pipx` on 2026-08-08 20:10:54
+export PATH="$PATH:/home/james/.local/bin"
+
+#Auto-launch Sway on TTY1 login
+if [ "$(tty)" = "/dev/tty1" ]; then
+  read -p "Start Sway? [y]es or [n]o: " -n 1 -r
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    exec sway
+  fi
+fi

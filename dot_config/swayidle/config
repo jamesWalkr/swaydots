@@ -1,0 +1,20 @@
+# 1. lock the screen after 10 minutes of idle
+# 2. turn off display 10 minutes after screen is locked
+# 3. suspend 5 minutes ater display is turned off
+
+
+timeout 600 '~/Scripts/lock'
+timeout 1200 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
+timeout 1500 'systemctl suspend-then-hibernate'
+before-sleep '~/Scripts/lock'
+after-resume 'swaymsg "output * power on"'
+
+
+
+
+#timeout 120 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
+#timeout 180 '~/Scripts/lock'
+#timeout 240 'if pgrep -x swaylock; then swaymsg "output * power off"; fi' resume 'if pgrep swaylock; then swaymsg "output * power on"; fi'
+#timeout 240 'systemctl suspend-then-hibernate'
+#before-sleep '~/Scripts/lock'
+#after-resume 'swaymsg "output * power on"'
